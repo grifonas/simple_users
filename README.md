@@ -6,8 +6,11 @@
 - Ubuntu 16.04 (tested with kitchen)
 
 # USAGE:
-## Adding Users:
- Add a block containing each of the following to create a user:
+- Clone this cookbook
+- Include users::default in any of your recipes.
+
+## Add Users:
+Add a block to the default attribute containing each of the following to create a user:
 -  name - Username.
 -  fullName - Full name of your new user (may contain spaces).
 -  passHash - Shadow-file hash of the desired password.
