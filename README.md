@@ -49,3 +49,4 @@ default['users']['users'] = [
 		'myAction' => 'remove'
 	}
 ```
+Note that the above **must be** a part of the same default['users']['users'] array.
