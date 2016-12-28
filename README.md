@@ -19,7 +19,7 @@ Add a block to the default attribute containing each of the following to create 
 
 ### Example of the default attribute file:
 ```ruby
-default['baseline']['users'] = [
+default['users']['users'] = [
 	{
 		'name' => 'usernam01',
 		'fullName' => 'User01 Name',
