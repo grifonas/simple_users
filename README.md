@@ -16,6 +16,7 @@ Add a block to the default attribute containing each of the following to create 
 -  passHash - Shadow-file hash of the desired password.
 -  sshPubKey - ssh public key string to add to ~/.ssh/authorized_keys
 -  action - create
+
 ## Remove Users:
  Add all the entries as mentioned above but specify "remove" as the action.
 
