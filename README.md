@@ -17,6 +17,27 @@ Add a block to the default attribute containing each of the following to create 
 -  sshPubKey - ssh public key string to add to ~/.ssh/authorized_keys
 -  action - create
 
+### Example of the default attribute file:
+```ruby
+default['baseline']['users'] = [
+	{
+		'name' => 'usernam01',
+		'fullName' => 'User01 Name',
+		'passHash' => 'A_Long_HASH_String...',
+		'sshPubKey' => 'ssh-rsa YourSSHPublicKey...',
+		'myAction' => 'create'
+	},
+	{
+		'name' => 'usernam02',
+		'fullName' => 'User02 Name',
+		'passHash' => 'A_Long_HASH_String...',
+		'sshPubKey' => 'ssh-rsa YourSSHPublicKey...',
+		'myAction' => 'create'
+	}
+]
+```
+
 ## Remove Users:
  Add all the entries as mentioned above but specify "remove" as the action.
+
 
