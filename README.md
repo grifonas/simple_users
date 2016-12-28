@@ -39,7 +39,7 @@ default['users']['users'] = [
 ```
 
 ## Remove Users:
- Add all the entries as mentioned above but specify "remove" as the action.
+ Add all the entries as mentioned above but specify "remove" as the value of ```ruby myAction ```.
 ```ruby
 	{
 		'name' => 'usernam03',
