@@ -40,7 +40,7 @@ default['users']['users'] = [
 
 ## Remove Users:
  Add all the entries as mentioned above but specify "remove" as the action.
-
+```ruby
 	{
 		'name' => 'usernam03',
 		'fullName' => 'User03 Name',
@@ -48,4 +48,4 @@ default['users']['users'] = [
 		'sshPubKey' => 'ssh-rsa YourSSHPublicKey...',
 		'myAction' => 'remove'
 	}
-
+```
