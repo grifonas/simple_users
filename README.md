@@ -4,6 +4,7 @@
 ## Supported Platforms:
 
 - Ubuntu 16.04 (tested with kitchen)
+- Ubuntu 14.04 was **not tested** however no ubuntu 16.04 specific commands were used.
 
 # USAGE:
 - Clone this cookbook
