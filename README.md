@@ -1,6 +1,7 @@
-# users cookbook
+# Users cookbook
+# Scope:
  Chef cookbook to manage users.
-Platfporms supported:
+## Supported Platforms:
 
 - Ubuntu 16.04 (tested with kitchen)
 
