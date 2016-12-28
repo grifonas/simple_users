@@ -4,7 +4,7 @@ Platfporms supported:
 
 Ubuntu
 
-USAGE:
+# USAGE:
 Adding Users:
  Add a block containing each of the following to create a user:
   name - Username.
