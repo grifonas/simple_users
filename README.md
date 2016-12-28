@@ -2,7 +2,7 @@
  Chef cookbook to manage users.
 Platfporms supported:
 
-Ubuntu
+- Ubuntu 16.04 (tested with kitchen)
 
 # USAGE:
 ## Adding Users:
