@@ -41,4 +41,11 @@ default['users']['users'] = [
 ## Remove Users:
  Add all the entries as mentioned above but specify "remove" as the action.
 
+	{
+		'name' => 'usernam03',
+		'fullName' => 'User03 Name',
+		'passHash' => 'A_Long_HASH_String...',
+		'sshPubKey' => 'ssh-rsa YourSSHPublicKey...',
+		'myAction' => 'remove'
+	}
 
