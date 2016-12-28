@@ -4,7 +4,7 @@
 #
 # Greg Konradt. Dec. 2016
 
-node["baseline"]["users"].each do |groupname|  
+node["users"]["users"].each do |groupname|  
   case groupname['myAction']
   when 'create'  
     doThis = 'create'
@@ -17,7 +17,7 @@ node["baseline"]["users"].each do |groupname|
 end
 
 
-node["baseline"]["users"].each do |myUser|  
+node["users"]["users"].each do |myUser|  
   user "#{myUser['fullName']}" do
     username myUser['name']    
     gid myUser['name']
@@ -29,7 +29,7 @@ node["baseline"]["users"].each do |myUser|
   end
 end
 
-node["baseline"]["users"].each do |myUser|
+node["users"]["users"].each do |myUser|
   case myUser['myAction']
   when 'create'  
     doThis = 'create'
@@ -43,7 +43,7 @@ node["baseline"]["users"].each do |myUser|
   end
 end
 
-node["baseline"]["users"].each do |myUser|
+node["users"]["users"].each do |myUser|
   case myUser['myAction']
   when 'create'  
     doThis = 'create'

@@ -6,7 +6,7 @@
 #### passHash - Shadow-file hash of the desired password.
 #### sshPubKey - ssh public key string to add to ~/.ssh/authorized_keys
 #### action - create/remove
-default['baseline']['users'] = [
+default['users']['users'] = [
 	{
 		'name' => 'gkonradt',
 		'fullName' => 'Greg Konradt',
