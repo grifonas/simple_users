@@ -3,9 +3,9 @@
  Chef cookbook to manage users.
 ## Supported Platforms:
 
-- Ubuntu 16.04 (tested with kitchen)
+- Ubuntu 16.04 (tested with Kitchen)
 - Ubuntu 14.04 was **not tested** however no ubuntu 16.04-specific commands are used here so it will probably work.
-
+- CentOS 7 (tested with Kitchen)
 # USAGE:
 - Clone this cookbook
 - Include users::default in any of your recipes.
