@@ -18,6 +18,7 @@ Add a block to the default attribute containing each of the following to create 
 -  passHash - Shadow-file hash of the desired password.
 -  sshPubKey - ssh public key string to add to ~/.ssh/authorized_keys
 -  action - create
+-  sudo - yes/no. Adding/removing the user from the sudoers file (only supported on Ubuntu for now)
 
 ### Example of the default attribute file:
 ```ruby
@@ -27,14 +28,16 @@ default['users']['users'] = [
 		'fullName' => 'User01 Name',
 		'passHash' => 'A_Long_HASH_String...',
 		'sshPubKey' => 'ssh-rsa YourSSHPublicKey...',
-		'myAction' => 'create'
+		'myAction' => 'create',
+		'sudo' => 'yes'
 	},
 	{
 		'name' => 'usernam02',
 		'fullName' => 'User02 Name',
 		'passHash' => 'A_Long_HASH_String...',
 		'sshPubKey' => 'ssh-rsa YourSSHPublicKey...',
-		'myAction' => 'create'
+		'myAction' => 'create',
+		'sudo' => 'no'
 	}
 ]
 ```
@@ -50,4 +53,7 @@ default['users']['users'] = [
 		'myAction' => 'remove'
 	}
 ```
+## Removing Users from Sudoers
+  Put 'no' in the 'sudo' section of your user.
+
 Note that the above **must be** a part of the same  ``` default['users']['users'] ``` array.

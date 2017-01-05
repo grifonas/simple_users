@@ -13,13 +13,15 @@ default['users']['users'] = [
 		'fullName' => 'User Name1',
 		'passHash' => 'ShadowFileHashString',
 		'sshPubKey' => 'ssh-rsa SSHPublicKey',
-		'myAction' => 'create'
+		'myAction' => 'create',
+		'sudo' => 'no'
 	},
 	{
 		'name' => 'username02',
 		'fullName' => 'User Name2',
 		'passHash' => 'ShadowFileHashString',
 		'sshPubKey' => 'ssh-rsa SSHPublicKey',
-		'myAction' => 'create'
+		'myAction' => 'create',
+		'sudo' => 'no'
 	},
 ]	
