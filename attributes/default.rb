@@ -10,16 +10,16 @@
 default['users']['users'] = [
 	{
 		'name' => 'username01',
-		'fullName' => 'User Name',
+		'fullName' => 'User Name1',
 		'passHash' => 'ShadowFileHashString',
 		'sshPubKey' => 'ssh-rsa SSHPublicKey',
 		'myAction' => 'create'
 	},
 	{
 		'name' => 'username02',
-		'fullName' => 'User Name',
+		'fullName' => 'User Name2',
 		'passHash' => 'ShadowFileHashString',
 		'sshPubKey' => 'ssh-rsa SSHPublicKey',
-		'myAction' => 'remove'
+		'myAction' => 'create'
 	},
 ]	
