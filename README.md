@@ -8,7 +8,7 @@
 - CentOS 7 (tested with Kitchen)
 
 # USAGE:
-- Clone this cookbook
+- Set 'simple_users' as one of your dependencies
 - Include simple_users::default in any of your recipes, roles or environments.
 
 ## Add Users:
