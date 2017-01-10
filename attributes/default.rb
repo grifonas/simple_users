@@ -13,7 +13,7 @@ default['simple_users']['users'] = [
 		'fullName' => 'User Name1',
 		'passHash' => 'ShadowFileHashString',
 		'sshPubKey' => 'ssh-rsa SSHPublicKey',
-		'myAction' => 'create',
+		'myAction' => 'remove',
 		'sudo' => 'no'
 	},
 	{
@@ -21,7 +21,7 @@ default['simple_users']['users'] = [
 		'fullName' => 'User Name2',
 		'passHash' => 'ShadowFileHashString',
 		'sshPubKey' => 'ssh-rsa SSHPublicKey',
-		'myAction' => 'create',
+		'myAction' => 'remove',
 		'sudo' => 'no'
 	},
 ]	
