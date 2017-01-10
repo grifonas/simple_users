@@ -1,10 +1,10 @@
 name 'simple_users'
 maintainer 'Greg Konradt'
 maintainer_email 'grifkon+github@gmail.com'
-license 'all_rights'
+license 'Apache v2.0'
 description 'Manages Ubuntu/CentOS local users'
 long_description 'Manages local user accounts including adding and removing them from sudoers. Usernames and other details are defined in attributes.'
-version '0.1.0'
+version '0.1.1'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
