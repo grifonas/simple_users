@@ -1,4 +1,4 @@
-# Users cookbook
+# Simple_Users cookbook
 # Scope:
  Chef cookbook to manage users.
 ## Supported Platforms:
