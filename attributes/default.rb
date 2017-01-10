@@ -7,7 +7,7 @@
 #### sshPubKey - ssh public key string to add to ~/.ssh/authorized_keys
 #### action - create/remove
 
-default['users']['users'] = [
+default['simple_users']['users'] = [
 	{
 		'name' => 'username01',
 		'fullName' => 'User Name1',

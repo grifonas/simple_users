@@ -1,12 +1,12 @@
 #
-# Cookbook:: users
+# Cookbook:: simple_users
 # Spec:: default
 #
-# Copyright:: 2016, The Authors, All Rights Reserved.
+# Greg Konradt 2017.
 
 require 'spec_helper'
 
-describe 'users::default' do
+describe 'simple_users::default' do
   context 'When all attributes are default, on an unspecified platform' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new

@@ -1,10 +1,10 @@
 #
-# Cookbook Name:: users
+# Cookbook Name:: simple_users
 # Recipe:: users
 #
 # Greg Konradt. Dec. 2016
 
-node["users"]["users"].each do |groupname|  
+node["simple_users"]["users"].each do |groupname|  
   case groupname['myAction']
   when 'create'  
     doThis = 'create'
@@ -17,7 +17,7 @@ node["users"]["users"].each do |groupname|
 end
 
 
-node["users"]["users"].each do |myUser|  
+node["simple_users"]["users"].each do |myUser|  
   user "#{myUser['fullName']}" do
     username myUser['name']    
     gid myUser['name']
@@ -29,7 +29,7 @@ node["users"]["users"].each do |myUser|
   end
 end
 
-node["users"]["users"].each do |myUser|
+node["simple_users"]["users"].each do |myUser|
   case myUser['myAction']
   when 'create'  
     doThis = 'create'
@@ -43,7 +43,7 @@ node["users"]["users"].each do |myUser|
   end
 end
 
-node["users"]["users"].each do |myUser|
+node["simple_users"]["users"].each do |myUser|
   case myUser['myAction']
   when 'create'  
     doThis = 'create'
@@ -61,7 +61,7 @@ end
 
 case node['platform']
 when 'ubuntu'
-  node["users"]["users"].each do |myUser|  
+  node["simple_users"]["users"].each do |myUser|  
     group "sudo" do
       action :modify
       append true

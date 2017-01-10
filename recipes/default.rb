@@ -1,6 +1,6 @@
 #
-# Cookbook:: users
+# Cookbook:: simple_users
 # Recipe:: default
 #
-# Copyright:: 2016, The Authors, All Rights Reserved.
-include_recipe 'users::users'
+# Greg Konradt
+include_recipe 'simple_users::users'

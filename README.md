@@ -9,7 +9,7 @@
 
 # USAGE:
 - Clone this cookbook
-- Include users::default in any of your recipes.
+- Include simple_users::default in any of your recipes, roles or environments.
 
 ## Add Users:
 Add a block to the default attribute containing each of the following to create a user:
@@ -22,7 +22,7 @@ Add a block to the default attribute containing each of the following to create 
 
 ### Example of the default attribute file:
 ```ruby
-default['users']['users'] = [
+default['simple_users']['users'] = [
 	{
 		'name' => 'usernam01',
 		'fullName' => 'User01 Name',
@@ -56,4 +56,4 @@ default['users']['users'] = [
 ## Removing Users from Sudoers
   Put 'no' in the 'sudo' section of your user.
 
-Note that the above **must be** a part of the same  ``` default['users']['users'] ``` array.
+Note that the above **must be** a part of the same  ``` default['simple_users']['users'] ``` array.
