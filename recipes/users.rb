@@ -60,18 +60,24 @@ node["simple_users"]["users"].each do |myUser|
   end
 end
 
-case node['platform']
-when 'ubuntu'
-  node["simple_users"]["users"].each do |myUser|  
-    group "sudo" do
-      action :modify
-      append true
-      case myUser['sudo']
-      when 'yes'
-        members myUser['name']  
-      when 'no'
-        excluded_members myUser['name']  
-      end    
-    end  
+
+
+node["simple_users"]["users"].each do |myUser|  
+  case node['platform']
+  when 'ubuntu'
+    sudoersGroup = 'sudo'
+  when 'centos'
+    sudoersGroup = 'wheel'
+  end
+  group "#{sudoersGroup}" do
+    action :modify
+    append true
+    case myUser['sudo']
+    when 'yes'
+      members myUser['name']  
+    when 'no'
+      excluded_members myUser['name']  
+    end    
   end
 end
+
