@@ -25,7 +25,7 @@ makepasswd --clearfrom=- --crypt-md5 <<< YourPass
 ```
 -  sshPubKey - ssh public key string to add to ~/.ssh/authorized_keys
 -  action - create
--  sudo - yes/no. Adding/removing the user from the sudoers file (only supported on Ubuntu for now)
+-  sudo - yes/no. Adding/removing the user from the sudoers file.
 
 ### Example of the default attribute file:
 ```ruby
