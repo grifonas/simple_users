@@ -54,6 +54,7 @@ node["simple_users"]["users"].each do |myUser|
   file "/home/#{myUser['name']}/.ssh/authorized_keys" do
     mode '600'
     owner myUser['name']
+    group myUser['name']
     content myUser['sshPubKey']
     action doThis
   end
