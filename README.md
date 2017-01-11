@@ -15,7 +15,14 @@
 Add a block to the default attribute containing each of the following to create a user:
 -  name - Username.
 -  fullName - Full name of your new user (may contain spaces).
--  passHash - Shadow-file hash of the desired password.
+-  passHash - Shadow-file hash of the desired password. The hash can be generated with the following commands: 
+
+```bash
+openssl passwd -1 -salt xyz  yourpass
+```
+```bash
+makepasswd --clearfrom=- --crypt-md5 <<< YourPass
+```
 -  sshPubKey - ssh public key string to add to ~/.ssh/authorized_keys
 -  action - create
 -  sudo - yes/no. Adding/removing the user from the sudoers file (only supported on Ubuntu for now)
