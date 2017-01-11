@@ -11,10 +11,10 @@ default['simple_users']['users'] = [
 	{
 		'name' => 'username01',
 		'fullName' => 'User Name1',
-		'passHash' => 'ShadowFileHashString',
+		'passHash' => '$1$xyz$ffjEtcHmdxDW9osDZvqPN0',
 		'sshPubKey' => 'ssh-rsa SSHPublicKey',
-		'myAction' => 'remove',
-		'sudo' => 'no'
+		'myAction' => 'create',
+		'sudo' => 'yes'
 	},
 	{
 		'name' => 'username02',

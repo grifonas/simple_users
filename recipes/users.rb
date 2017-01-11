@@ -66,7 +66,7 @@ node["simple_users"]["users"].each do |myUser|
   case node['platform']
   when 'ubuntu'
     sudoersGroup = 'sudo'
-  when 'centos'
+  when 'centos', 'redhat'
     sudoersGroup = 'wheel'
   end
   group "#{sudoersGroup}" do
